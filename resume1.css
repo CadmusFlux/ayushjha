@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'name-font';
+    src: url('fonts/juliussansone.eot');
+    src: url('fonts/juliussansone.eot?#iefix') format('embedded-opentype'),
+         url('fonts/juliussansone.woff2') format('woff2'),
+         url('fonts/juliussansone.woff') format('woff'),
+         url('fonts/juliussansone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'header1';
+    src: url("fonts/lato-bolditalic-webfont.woff2") format('woff2'),
+         url('fonts/lato-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'header2';
+    src: url('fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/lato-lightitalic-webfont.woff') format('woff'),
+         url('fonts/Lato-LightItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'zeyada';
+    src: url('fonts/zeyada-regular-webfont.woff2') format('woff2'),
+         url('fonts/zeyada-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gidole';
+    src: url('fonts/gidole-regular-webfont.eot');
+    src: url('fonts/gidole-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gidole-regular-webfont.woff2') format('woff2'),
+         url('fonts/gidole-regular-webfont.woff') format('woff'),
+         url('fonts/gidole-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroyb';
+    src: url('fonts/gilroy-extrabold-webfont.eot');
+    src: url('fonts/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-extrabold-webfont.woff') format('woff'),
+         url('fonts/gilroy-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroyl';
+    src: url('fonts/gilroy-light-webfont.eot');
+    src: url('fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-light-webfont.woff') format('woff'),
+         url('fonts/gilroy-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+
+	margin: 0px;
+	padding: 0px;
+	background-color: #F8F7F6;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: grayscale; 
+	text-rendering: optimizeLegibility;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+/*------------*/
+.resume-container {
+
+  display: grid;
+  grid-template-columns: 29.5% 10.1% 1fr;
+  grid-template-rows: 85px 300px 83px 324px 56px 324px 56px 324px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+
+/*----------------*/
+
+.nav_cont{
+
+	grid-row: 1;
+	grid-column: 1/-1;
+}
+.header_cont{
+
+	list-style-type: none;
+	opacity: 0.8;
+	font-family: "gilroyl";
+	font-size: 19px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+
+	display: flex;
+	flex-direction: row;
+	gap:2%;
+	justify-content: center;
+	align-items:  center;
+}
+	
+.order1{
+	order:1;
+}
+.order2{
+	order:2;
+}
+.order3{
+	order:3;
+	font-family: "zeyada";
+	margin-top:10px;
+	font-size: 32px;
+}
+.order4{
+	order:4;
+}
+.order5{
+	order:5;
+}
+
+/*----------------*/
+
+.rect_wrapper{
+
+	grid-row: 2;
+	grid-column: 1/-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#090808;
+
+}
+.rectangle{
+
+	width: 412px;
+	height: 192px;
+	border: 4px solid white;
+	font-family: 'name-font';
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	gap:20px;
+}
+.name{
+
+	margin:0px auto 0px auto;
+	margin-right: auto;
+	font-size: 42px;
+	letter-spacing: 0.145em;
+	color:white;
+
+}
+.name1{
+
+	margin:0px auto 0px auto;
+	font-size: 12px;
+	letter-spacing: 0.165em;
+	color:white;
+}
+/*----------------------------------*/
+
+hr.vert_timeline{
+
+	grid-row: 4/-1 ;
+	grid-column:2/3;
+	height: 90%;
+	width: 1px;
+	border: none;
+	background:black;
+}
+
+/*----------------------------------*/
+
+.cont{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	gap:10px;
+	padding: 0px 5.2% 0px 13.2%;
+	font-family: 'name-font'
+
+}
+/*.cont>p{
+
+	padding: 0px;
+	margin: 0px;
+}*/
+.profile{
+
+	grid-row:4 ;
+	grid-column:1/2 ;	
+	
+}
+.skills{
+	grid-row:6 ;
+	grid-column:1/2 ;
+}
+.contact{
+	grid-row: 8;
+	grid-column: 1/2;
+}
+.projects{
+
+	grid-row:4 ;
+	grid-column:3/4 ;
+}
+.experience{
+	grid-row:6 ;
+	grid-column:3/4 ;
+}
+.hobbies{
+	grid-row: 8;
+	grid-column: 3/4;
+}
+
+.dot{
+	height: 20px;
+	width: 20px;
+	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	margin: 0px auto 0px auto;
+}
+.dot1{
+
+	grid-row:4;
+	grid-column:2/3;
+}
+.dot2{
+	grid-row:6;
+	grid-column:2/3;
+}
+.dot3{
+	grid-row:8;
+	grid-column:2/3;
+}
+
+.heading{
+
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+.para{
+
+	font-size: 14px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	line-height: 148%;
+
+}
+.small_para{
+
+	font-size: 12px;
+	margin: 0px 0px 0px 20px;
+	line-height: 148%;
+}
+ul.para{
+
+	margin: 0px 0px 0px 20px;
+
+}

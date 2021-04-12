@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'name-font';
+    src: url('fonts/juliussansone.eot');
+    src: url('fonts/juliussansone.eot?#iefix') format('embedded-opentype'),
+         url('fonts/juliussansone.woff2') format('woff2'),
+         url('fonts/juliussansone.woff') format('woff'),
+         url('fonts/juliussansone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'header1';
+    src: url("fonts/lato-bolditalic-webfont.woff2") format('woff2'),
+         url('fonts/lato-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'header2';
+    src: url('fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/lato-lightitalic-webfont.woff') format('woff'),
+         url('fonts/Lato-LightItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'zeyada';
+    src: url('fonts/zeyada-regular-webfont.woff2') format('woff2'),
+         url('fonts/zeyada-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gidole';
+    src: url('fonts/gidole-regular-webfont.eot');
+    src: url('fonts/gidole-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gidole-regular-webfont.woff2') format('woff2'),
+         url('fonts/gidole-regular-webfont.woff') format('woff'),
+         url('fonts/gidole-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroyb';
+    src: url('fonts/gilroy-extrabold-webfont.eot');
+    src: url('fonts/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-extrabold-webfont.woff') format('woff'),
+         url('fonts/gilroy-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroyl';
+    src: url('fonts/gilroy-light-webfont.eot');
+    src: url('fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-light-webfont.woff') format('woff'),
+         url('fonts/gilroy-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+
+	margin: 0px;
+	padding: 0px;
+	background-color: #F8F7F6;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: grayscale; 
+	text-rendering: optimizeLegibility;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+/*-----------------------------*/
+.container{
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 55% 1fr;
+  grid-template-rows: 12% 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+}
+/*-------------*/
+.nav_cont{
+
+	grid-row: 1;
+	grid-column: 2/3;
+}
+.header_cont{
+
+	list-style-type: none;
+	opacity: 0.8;
+	font-family: "gilroyl";
+	font-size: 19px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+
+	display: flex;
+	flex-direction: row;
+	gap:2%;
+	justify-content: center;
+	align-items:  center;
+}
+	
+.order1{
+	order:1;
+}
+.order2{
+	order:2;
+}
+.order3{
+	order:3;
+	font-family: "zeyada";
+	margin-top: 10px;
+	font-size: 32px;
+}
+.order4{
+	order:4;
+}
+.order5{
+	order:5;
+}
+
+.content{
+
+	grid-row: 2/3;
+	grid-column: 2/3;
+	
+}
+.box{
+
+	margin: 10% auto 0px auto;
+	height: 60% ;
+	width: 90%;
+	border: 6px solid #FAB3E2;
+	background-color: white;
+	animation: pulse 5s infinite;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	font-family: "name-font";
+
+}
+
+
+@keyframes pulse {
+
+	0%{
+		border: 6px solid #F47B7B;
+	}
+	10%{
+		border: 6px solid #F4C37B;
+	}
+	20%{
+		border: 6px solid #EAF47B;
+	}
+	30%{
+		border: 6px solid #7BF47F;
+	}
+	40%{
+		border: 6px solid #7BF4CF;
+	}
+	50%{
+		border: 6px solid #7B87F4;
+	}
+	60%{
+		border: 6px solid #C67BF4;
+	}
+	70%{
+		border: 6px solid #F47BE0;
+	}
+	80%{
+		border: 6px solid #F47B9F;
+	}
+	90%{
+		border: 6px solid #F47B7B;
+	}
+	100%{
+		border: 6px solid #F47B7B  /*#FAB3E2*/;
+	}
+
+
+}
+
+.name{
+
+	margin: 0px auto 4% auto;
+	font-size: 45px;
+	letter-spacing: 0.145em;
+/*	color: #FAB3E2;
+*/	/*animation: pulse1 10s infinite;*/
+
+
+}
+@keyframes pulse1 {
+
+	0%{
+		color:#F47B7B;
+	}
+	10%{
+		color:#F4C37B;
+	}
+	20%{
+		color:#EAF47B;
+	}
+	30%{
+		color:#7BF47F;
+	}
+	40%{
+		color:#7BF4CF;
+	}
+	50%{
+		color:#7B87F4;
+	}
+	60%{
+		color:#C67BF4;
+	}
+	70%{
+		color:#F47BE0;
+	}
+	80%{
+		color:#F47B9F;
+	}
+	90%{
+		color:#F47B7B;
+	}
+	100%{
+		color:#FAB3E2;
+	}
+
+
+}
+.name1{
+
+	margin: 0px auto;
+	font-size: 15px;
+	letter-spacing: 0.165em;
+/*	animation: pulse1 10s infinite;
+*/
+}
