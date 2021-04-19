@@ -2,16 +2,16 @@ $(function(){
 
 	var url = new URL(window.location.href);
 	url = url.pathname;
-	console.log(url);
+	// console.log(url);
 	var filename = url.replace("/","").replace(".html","");
-    console.log(filename);
+    // console.log(filename);
 
 
 	var old_class = $('#'+filename).attr('class');
-	console.log(old_class);
+	// console.log(old_class);
 
 	var div1 = $('.order3').attr('id');
-	console.log(div1);
+	// console.log(div1);
 
 	$('#'+filename).removeClass(old_class);
 	$('#'+filename).addClass("order3");
@@ -20,21 +20,29 @@ $(function(){
 	$("#"+div1).addClass(old_class);
 
 
-	// $("nav ul li").click( function() {
+	$('.art').click(function (){
 
-	// var old_class = $(this).attr('class');
-	// // console.log(old_class);
+		var curr_class = $(this).attr('class').split(' ')[1];
+		window.location.href = `/images/${curr_class}.png`;
+	});
 
-	// var div1 = $(this).siblings(".order3").attr("id");
-	// // console.log(div1);	
+	$('.mobile-number').click(function (){
+      	copyToClipboard("+91 997507387");
+	});
 
-	// $(this).removeClass(old_class);
-	// $(this).addClass("order3");
+    function copyToClipboard(str) {
+      const el = document.createElement("textarea");
+      el.value = str;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+    }
 
-	// $("#"+div1).removeClass("order3");
-	// $("#"+div1).addClass(old_class);
+    $('.img-click').click(function(){
 
-	// });
-
+    	var host_name = $(this).attr('href');
+    	window.location.href = host_name;
+    });
 });
 
