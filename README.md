@@ -9,16 +9,16 @@
     4. At some point blog about my hobbies.
 ---
 
-Landing Page        |  Art gallery         
+Landing Page        |  About Me        
 :-------------------------:|:-------------------------:
 ![Home page](screenshot/1.jpg)  |  ![About Me](screenshot/4.jpg)
 
 
-About Me          |  Resume       
+Art Gallery        |  Resume       
 :-------------------------:|:-------------------------:
 ![Art Gallery](screenshot/2.jpg)  |  ![Resume](screenshot/5.jpg)
 
-About Me                 
+Projects                 
 :-------------------------:
 ![Projects](screenshot/3.jpg)  
 
