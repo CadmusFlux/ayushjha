@@ -68,6 +68,26 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'leckerli';
+    src: url('fonts/leckerlione-regular-webfont.eot');
+    src: url('fonts/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leckerlione-regular-webfont.woff2') format('woff2'),
+         url('fonts/leckerlione-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ibm_plex';
+    src: url('fonts/ibmplexmono-regular-webfont.eot');
+    src: url('fonts/ibmplexmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ibmplexmono-regular-webfont.woff2') format('woff2'),
+         url('fonts/ibmplexmono-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*---------------------------*/
 
@@ -91,8 +111,8 @@ a{
 
 	height:100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 11% 1fr;
+    grid-template-columns: 1fr 1366px 1fr;
+    grid-template-rows: 80px 1fr 688px 1fr;
     gap: 0px 0px;
     
 
@@ -108,9 +128,6 @@ a{
 .header_cont{
 
 	list-style-type: none;
-	opacity: 0.8;
-	font-family: "gilroyl";
-	font-size: 19px;
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -121,37 +138,611 @@ a{
 	justify-content: center;
 	align-items: center;
 }
+
 	
 .order1{
 	order:1;
+    opacity:0.6;
+    font-family: "ibm_plex";
+    font-size: 19px;
+
 }
 .order2{
 	order:2;
+    opacity:0.6;
+    font-family: "ibm_plex";
+    font-size: 19px;
+
 }
 .order3{
 	order:3;
-	font-family: "zeyada";
-	margin-top: 10px;
+	font-family: "leckerli";
+    opacity: 0.6;
+	margin-top: 3px;
 	font-size: 32px;
 }
 .order4{
 	order:4;
+    opacity:0.6;
+    font-family: "ibm_plex";
+    font-size: 19px;
+
 }
 .order5{
 	order:5;
+    opacity:0.6;
+    font-family: "ibm_plex";
+    font-size: 19px;
+
 }
 
 /*--------------------------------------*/
 
-.uc{
 
-	grid-row: 2;
-	grid-column: 1/-1;
-	font-family: "zeyada";
-	font-size: 72px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	
+.wrapper{
+
+    grid-row:3;
+    grid-column:2/3;
+    height: 688px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
+.cs-section{
+
+    height: 688px;
+    width: 683px;
+    position: relative;
+}
+.art-section{
+    height: 688px;
+    width: 683px;
+    position: relative;
+
+}
+
+/*-------------------------------------------*/
+
+.micro_img{
+
+    
+    margin: auto 0 auto auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 180px;
+    width:100px;
+    background-color:  #325288 ;
+    /*border-radius: 25px 0 0 25px;*/
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+
+}
+.micro-interior{
+
+    background-color: #d8f8b7;
+    width: 95px;
+    height: 165px;
+
+    /*border-radius: 0px 25px 25px 0px;*/
+
+}
+
+/*----------------------------------------------*/
+
+/*.palette_img{
+
+    
+    margin: auto auto auto 0;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 180px;
+    width:100px;
+
+}*/
+.palette{
+
+    
+    margin: auto auto auto 0;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 180px;
+    width:100px;
+    background-color: #393e46;
+    /*border-radius: 0px 25px 25px 0px;*/
+    display: flex;
+    align-items: center;
+
+}
+.palette-interior{
+
+    background-color: #f9f7f7;
+    width: 95px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-radius: 0px 25px 25px 0px;*/
+     cursor: url("images/paintbrush.png"),auto;
+     position: relative;
+
+}
+.color{
+
+    height: 25px;
+    width: 75px;
+}
+
+.color1{
+
+    margin: 12px auto auto 10px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #00b8a9;
+
+}
+.color2{
+
+    margin: 49px auto auto 10px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #e84545;
+}
+.color3{
+
+    margin: 86px auto auto 10px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #f6416c;
+}
+.color4{
+
+    margin: 123px auto auto 10px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #ffde7d;  
+}
+/*.toggle{
+
+    position: relative;
+    display: inline-block;
+    height : 70px;
+    width: 30px;
+    transform: rotate(180deg);
+}
+
+.toggle input{
+
+    opacity: 0px;
+    height: 0px;
+    width: 0px;
+}   
+
+.slider{
+
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+.slider:before{
+
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+    left:3px;
+    right:3px;
+    top:3px;
+    background-color: white;
+    transition: 0.4s
+}
+
+input:checked + .slider{
+
+    background-color: #2196F3;
+}
+input:checked + .slider:before{
+
+    transform: translateY(40px);
+}*/
+
+/*-------------------  KATHPUTLI  -------------------*/
+
+.tamasha{
+
+    position: absolute;
+    height:660px;
+    width: 400px;
+    margin: 0 auto auto 200px;
+    top:0;left: 0;bottom: 0;right: 0;
+}
+.tam-wrapper{
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.controller{
+
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    margin:0 auto auto auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*--------------- PASA  -----------------*/
+.pasa{
+
+    height: 50px;
+    width: 6px;
+    background-color: black;
+
+    -webkit-border-radius: 5px 5px 5px 5px; 
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.pasa1{
+
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    position:absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 175px auto auto 35px;
+
+}
+.pasa2{
+
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position:absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 175px auto auto 35px;
+
+}
+
+.pasa3{
+
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    position:absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 175px 30px auto auto;
+
+}
+.pasa4{
+
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position:absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 175px 30px auto auto;
+
+}
+
+/*------------------   STRINGS  ---------------------*/
+
+.line{
+
+    width : 4px;
+    height:100px;
+    background-color: #a75ae4;
+
+    -webkit-border-radius: 5px 5px 5px 5px; 
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.line1{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    transform: rotate(-10deg);
+    margin: 200px auto auto 23px;
+    z-index: 4;
+}
+
+.line2{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: 215px auto auto 25px;
+
+}
+
+.line3{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: 180px auto auto 47px;
+
+}
+.line4{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: 200px auto auto 57px;
+    
+}
+
+.line5{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    transform: rotate(8deg);
+    margin: 200px 15px auto auto ;
+    z-index: 4;
+
+}
+
+.line6{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: 215px 20px auto auto ;
+
+}
+
+.line7{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: 180px 43px auto auto ;
+
+}
+.line8{
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: 200px 53px auto auto ;
+ 
+}
+
+/*-------------------   Puppets   -------------------------*/
+
+.katputli1{
+
+    height: 120px;
+    width: 80px;
+    /*transform: rotate(50deg);*/
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 255px auto auto 185px;
+    z-index:3;
+    transform: rotate(30deg);
+}
+
+.katputli2{
+
+    height: 120px;
+    width: 80px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 255px 60px auto auto;
+    z-index: 3;
+    transform: rotate(-30deg);
+}
+
+/*----------------  Puppet Hands -----------------------*/
+.upper{
+
+    width: 5px;
+    background-color: black;
+    -webkit-border-radius: 5px 5px 5px 5px; 
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.hand1{
+
+        height: 35px;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        margin: 288px auto auto 230px;
+        /*transform: rotate(-90deg);*/
+        z-index:4;
+
+}
+
+.hand2{
+
+    height: 25px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 295px auto auto 245px;
+    transform: rotate(-20deg);
+
+}
+
+.hand3{
+
+    height: 25px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 295px 120px auto auto ;
+    /*transform: rotate(20deg);*/
+    transform: rotate(20deg);
+
+}
+
+.hand4{
+
+    height: 35px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 288px 105px auto auto ;
+    
+    z-index:4;
+}
+.lower{
+
+    height: 5px;
+    background-color: black;
+    -webkit-border-radius: 5px 5px 5px 5px; 
+    -moz-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.hand5{
+    width: 45px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 320px auto auto 230px ;
+    z-index: 4;
+    transform: rotate(10deg);
+    transform-origin: top left;
+}
+
+.hand6{
+    width: 35px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 318px auto auto 250px ;
+    z-index: 1;
+}
+.hand7{
+    width: 35px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 318px 125px auto auto ;
+    z-index: 1;
+}
+.hand8{
+    width: 45px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 320px 105px auto auto ;
+    z-index: 4;
+    transform: rotate(-10deg);
+    transform-origin: top right;
+}
+
+
+/*-----------------  ARTBOARD  -----------------*/
+
+.artboard{
+
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: #00b8a9;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 300px  auto auto 52px;
+    z-index: 3;
+    opacity:1;
+    
+}
+
+
+.artboard-back{
+
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: #00b8a9;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 300px  auto auto 52px;
+    z-index: 2;
+
+}
+/*-----------------ANIMATE-------------------*/
+
+.pasa2rotate{
+
+    animation: pasarotate 2s both;
+}
+@keyframes pasarotate{
+
+    0%{  transform: rotate(-90deg);}
+    50%{ transform: rotate(-110deg);}
+    100%{transform: rotate(-90deg);}
+}
+
+.pasa4rotate{
+
+    animation: pasarotate2 2s both;
+}
+@keyframes pasarotate2{
+
+    0%{  transform: rotate(-90deg);}
+    50%{ transform: rotate(-70deg);}
+    100%{transform: rotate(-90deg);}
+}
+
+
+.slantline{
+
+    animation: slantheight 2s both;
+
+}
+@keyframes slantheight{
+
+    0%{  margin-top: 200px;}
+    50%{ margin-top: 210px;}
+    100%{ margin-top: 200px;}
+}
+
+.straightline{
+
+    animation: straightheight 2s both;
+
+}
+@keyframes straightheight{
+
+    0%{ height:120px; margin-top: 200px;}
+    50%{ height:120px; margin-top: 190px;}
+    100%{ height:120px; margin-top: 200px;}
+}
+
+.handanimate{
+
+    animation: handrotate 2s forwards;
+}
+@keyframes handrotate{
+
+    0% {transform: rotate(10deg); margin-left: 230px;}
+    50% {transform: rotate(60deg); margin-left: 235px;}
+    100% {transform: rotate(10deg); margin-left: 230px;}
+}
+
+.handanimate1{
+
+    animation: handrotate1 2s forwards;
+}
+@keyframes handrotate1{
+
+    0% {transform: rotate(-10deg); margin-right: 105px;}
+    50% {transform: rotate(-60deg); margin-right: 110px;}
+    100% {transform: rotate(-10deg); margin-right: 105px;}
+} 
+
+.artdrop{
+
+    -webkit-animation: drop 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: drop 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
+    }
+
+@keyframes drop{
+
+    0%{ 
+        -webkit-transform:translateY(0);
+        transform: translateY(0);
+        opacity: 1; }
+    50%{ 
+        -webkit-transform:translateY(300px);
+        transform: translateY(300px);
+        opacity: 0; }
+
+    100%{
+
+        -webkit-transform:translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+        background-color: yellow;
+    }
+} 
+
+/*-------------------------------------------*/
