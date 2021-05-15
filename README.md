@@ -18,7 +18,7 @@ Landing Page        |  About Me
 
 Art Gallery        |  Resume       
 :-------------------------:|:-------------------------:
-![Art Gallery](screenshot/2.png)  |  ![Resume](screenshot/5.png)
+![Art Gallery](screenshot/2.png)  |  ![Resume](screenshot/5.jpg)
 
 Projects                 
 :-------------------------:
