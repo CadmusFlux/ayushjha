@@ -6,9 +6,9 @@ $(function(){
 
 	var url = new URL(window.location.href);
 	url = url.pathname;
-	
-	var filename = url.replace("/","").replace(".html","");
-    
+	console.log("URL : ",url);
+	var filename = url.replace("/","").replace(".html","").replace(".pdf","");
+    console.log("filename : ",filename);
 
 
 	var old_class = $('#'+filename).attr('class');
@@ -61,6 +61,35 @@ $(function(){
 
 // ---------------------------------------    Projects  -------------------------------------------
 
+	// -------------------------- CS Section ----------------------
+
+	$('.parallel').click(function(){
+
+		var project_num = $(this).attr("class").split(' ')[1].slice(-1);
+		
+		$(".project1").css("display","none");
+		$(".project2").css("display","none");
+		$(".project3").css("display","none");
+		$(".project4").css("	display","none");
+		$(".project5").css("display","none");
+
+		$(".parallel1").css("background-color","#372f44");
+		$(".parallel2").css("background-color","#372f44");
+		$(".parallel3").css("background-color","#372f44");
+		$(".parallel4").css("background-color","#372f44");
+		$(".parallel5").css("background-color","#372f44");
+
+		$(`.parallel${project_num}`).css("background-color","#f3e600");
+		$(`.project${project_num}`).css("display","block");
+
+
+
+	});
+
+    
+	// -------------------------  ART Section ----------------------
+
+
     // Kathputli/Puppet animation
 
     var colors = ['#000000', "#00b8a9","#e84545" ,"#f6416c" ,"#ffde7d"]
@@ -69,8 +98,54 @@ $(function(){
     $('.color').click(function(){
 
 
+
+    	// Puppet controller animation
+
+
+    		$(".pasa2").addClass("pasa2rotate");
+    		$(".pasa4").addClass("pasa4rotate");
+
+    		setTimeout(function () {
+                $(".pasa2").removeClass("pasa2rotate");
+                $(".pasa4").removeClass("pasa4rotate");
+            }, 2000);
+
+
+    	// Puppet string animation
+
+    		
+
+    		$(".line1").addClass("slantline");
+    		$(".line5").addClass("slantline");
+    		$(".line4").addClass("straightline");
+    		$(".line8").addClass("straightline");	
+
+    		setTimeout(function () {
+               	$(".line1").removeClass("slantline");
+	    		$(".line5").removeClass("slantline");
+	    		$(".line4").removeClass("straightline");
+	    		$(".line8").removeClass("straightline");
+            }, 2000);
+
+
+    	// Puppet Hand animation
+
+
+
+    		$(".hand5").addClass("handanimate");
+    		$(".hand8").addClass("handanimate1");
+
+    		setTimeout(function () {
+	    		$(".hand5").removeClass("handanimate");
+	    		$(".hand8").removeClass("handanimate1");                
+            }, 2000)
+
+
+    	// Artboard drop animation
+
     		$(".artboard").removeClass("artdrop");
 
+    		//----------------------------------------------------------------------SYNTAX-------------------------------------
     		var curr_color = $(".artboard-back").css("background-color");
 
     		$('.artboard').css("background-color",curr_color);
@@ -85,6 +160,7 @@ $(function(){
     		$(".artboard-back").css("background-color",index);
     		
     		$(".artboard").addClass("artdrop");
+
 
     });
 
