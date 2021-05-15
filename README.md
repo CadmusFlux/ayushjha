@@ -22,6 +22,6 @@ Art Gallery        |  Resume
 
 Projects                 
 :-------------------------:
-![Projects](screenshot/3.jpg)  
+![Projects](screenshot/3.png)  
 
 ---
