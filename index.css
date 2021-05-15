@@ -1,73 +1,62 @@
-@font-face {
-    font-family: 'name-font';
-    src: url('fonts/juliussansone.eot');
-    src: url('fonts/juliussansone.eot?#iefix') format('embedded-opentype'),
-         url('fonts/juliussansone.woff2') format('woff2'),
-         url('fonts/juliussansone.woff') format('woff'),
-         url('fonts/juliussansone.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/*------------  FONTS ---------------*/
 
-}
-@font-face {
-    font-family: 'header1';
-    src: url("fonts/lato-bolditalic-webfont.woff2") format('woff2'),
-         url('fonts/lato-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    @font-face {
+        font-family: 'name-font';
+        src: url('fonts/juliussansone.woff2') format('woff2'),
+             url('fonts/juliussansone.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
 
-}
+    }
+    @font-face {
+        font-family: 'zeyada';
+        src: url('fonts/zeyada-regular-webfont.woff2') format('woff2'),
+             url('fonts/zeyada-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
 
-@font-face {
-    font-family: 'header2';
-    src: url('fonts/lato-lightitalic-webfont.woff2') format('woff2'),
-         url('fonts/lato-lightitalic-webfont.woff') format('woff'),
-         url('fonts/Lato-LightItalic.ttf');
-    font-weight: normal;
-    font-style: normal;
+    }
 
-}
-@font-face {
-    font-family: 'zeyada';
-    src: url('fonts/zeyada-regular-webfont.woff2') format('woff2'),
-         url('fonts/zeyada-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    @font-face {
+        font-family: 'gilroyl';
+        src: url('fonts/gilroy-light-webfont.woff2') format('woff2'),
+             url('fonts/gilroy-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'gidole';
-    src: url('fonts/gidole-regular-webfont.eot');
-    src: url('fonts/gidole-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/gidole-regular-webfont.woff2') format('woff2'),
-         url('fonts/gidole-regular-webfont.woff') format('woff'),
-         url('fonts/gidole-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'leckerli';
+        src: url('fonts/leckerlione-regular-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'gilroyb';
-    src: url('fonts/gilroy-extrabold-webfont.eot');
-    src: url('fonts/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
-         url('fonts/gilroy-extrabold-webfont.woff') format('woff'),
-         url('fonts/gilroy-extrabold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'ibm_plex';
+        src: url('fonts/ibmplexmono-regular-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'gilroyl';
-    src: url('fonts/gilroy-light-webfont.eot');
-    src: url('fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/gilroy-light-webfont.woff2') format('woff2'),
-         url('fonts/gilroy-light-webfont.woff') format('woff'),
-         url('fonts/gilroy-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    }
+    @font-face {
 
-}
+        font-family: 'iosevkab';
+        src: url("fonts/iosevka-bold.woff") format('woff'),
+             url("fonts/iosevka-bold.woff2") format('woff2');
+        font-weight: 700;
+        font-style: normal;
+
+    }
+    @font-face {
+
+        font-family: 'iosevkar';
+        src: url("fonts/iosevka-regular.woff") format('woff'),
+             url("fonts/iosevka-regular .woff2") format('woff2');
+        font-weight: 400;
+        font-style: normal;
+
+    }
 
 body{
 
@@ -104,8 +93,7 @@ a{
 
 	list-style-type: none;
 	opacity: 0.8;
-	font-family: "gilroyl";
-	font-size: 19px;
+	font-family: "ibm_plex";
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -117,24 +105,38 @@ a{
 	align-items:  center;
 }
 	
+
 .order1{
-	order:1;
-}
-.order2{
-	order:2;
-}
-.order3{
-	order:3;
-	font-family: "zeyada";
-	margin-top: 10px;
-	font-size: 32px;
-}
-.order4{
-	order:4;
-}
-.order5{
-	order:5;
-}
+      order:1;
+        opacity:0.6;
+        font-size: 19px;
+
+    }
+    .order2{
+      order:2;
+        opacity:0.6;
+        font-size: 19px;
+
+    }
+    .order3{
+      order:3;
+      font-family: "zeyada";
+      opacity: 1;
+      margin-top: 10px;
+      font-size: 40px;
+    }
+    .order4{
+      order:4;
+        opacity:0.6;
+        font-size: 19px;
+
+    }
+    .order5{
+      order:5;
+        opacity:0.6;
+        font-size: 19px;
+
+    }
 
 .content{
 

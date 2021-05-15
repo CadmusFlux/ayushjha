@@ -13,12 +13,12 @@
 
 Landing Page        |  About Me        
 :-------------------------:|:-------------------------:
-![Home page](screenshot/1.jpg)  |  ![About Me](screenshot/4.jpg)
+![Home page](screenshot/1.png)  |  ![About Me](screenshot/4.png)
 
 
 Art Gallery        |  Resume       
 :-------------------------:|:-------------------------:
-![Art Gallery](screenshot/2.jpg)  |  ![Resume](screenshot/5.jpg)
+![Art Gallery](screenshot/2.png)  |  ![Resume](screenshot/5.png)
 
 Projects                 
 :-------------------------:

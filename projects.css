@@ -2,29 +2,8 @@
 
     @font-face {
         font-family: 'name-font';
-        src: url('fonts/juliussansone.eot');
-        src: url('fonts/juliussansone.eot?#iefix') format('embedded-opentype'),
-             url('fonts/juliussansone.woff2') format('woff2'),
-             url('fonts/juliussansone.woff') format('woff'),
-             url('fonts/juliussansone.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-
-    }
-    @font-face {
-        font-family: 'header1';
-        src: url("fonts/lato-bolditalic-webfont.woff2") format('woff2'),
-             url('fonts/lato-bolditalic-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-
-    }
-
-    @font-face {
-        font-family: 'header2';
-        src: url('fonts/lato-lightitalic-webfont.woff2') format('woff2'),
-             url('fonts/lato-lightitalic-webfont.woff') format('woff'),
-             url('fonts/Lato-LightItalic.ttf');
+        src: url('fonts/juliussansone.woff2') format('woff2'),
+             url('fonts/juliussansone.woff') format('woff');
         font-weight: normal;
         font-style: normal;
 
@@ -37,55 +16,25 @@
         font-style: normal;
 
     }
-    @font-face {
-        font-family: 'gidole';
-        src: url('fonts/gidole-regular-webfont.eot');
-        src: url('fonts/gidole-regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/gidole-regular-webfont.woff2') format('woff2'),
-             url('fonts/gidole-regular-webfont.woff') format('woff'),
-             url('fonts/gidole-regular-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
 
-    }
-    @font-face {
-        font-family: 'gilroyb';
-        src: url('fonts/gilroy-extrabold-webfont.eot');
-        src: url('fonts/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
-             url('fonts/gilroy-extrabold-webfont.woff') format('woff'),
-             url('fonts/gilroy-extrabold-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-
-    }
     @font-face {
         font-family: 'gilroyl';
-        src: url('fonts/gilroy-light-webfont.eot');
-        src: url('fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/gilroy-light-webfont.woff2') format('woff2'),
-             url('fonts/gilroy-light-webfont.woff') format('woff'),
-             url('fonts/gilroy-light-webfont.ttf') format('truetype');
+        src: url('fonts/gilroy-light-webfont.woff2') format('woff2'),
+             url('fonts/gilroy-light-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
 
     }
     @font-face {
         font-family: 'leckerli';
-        src: url('fonts/leckerlione-regular-webfont.eot');
-        src: url('fonts/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/leckerlione-regular-webfont.woff2') format('woff2'),
-             url('fonts/leckerlione-regular-webfont.ttf') format('truetype');
+        src: url('fonts/leckerlione-regular-webfont.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
 
     }
     @font-face {
         font-family: 'ibm_plex';
-        src: url('fonts/ibmplexmono-regular-webfont.eot');
-        src: url('fonts/ibmplexmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/ibmplexmono-regular-webfont.woff2') format('woff2'),
-             url('fonts/ibmplexmono-regular-webfont.ttf') format('truetype');
+        src: url('fonts/ibmplexmono-regular-webfont.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
 
@@ -159,12 +108,13 @@
 
     	list-style-type: none;
     	height: 100%;
-        width: 100%;
+        width: 95%;
     	padding: 0px;
     	margin: 0px;
         position: absolute;
     	display: flex;
     	flex-direction: row;
+        font-family: "ibm_plex";
     	gap:2%;
     	justify-content: center;
     	align-items: center;
@@ -174,14 +124,12 @@
     .order1{
     	order:1;
         opacity:0.6;
-        font-family: "ibm_plex";
         font-size: 19px;
 
     }
     .order2{
     	order:2;
         opacity:0.6;
-        font-family: "ibm_plex";
         font-size: 19px;
 
     }
@@ -195,14 +143,12 @@
     .order4{
     	order:4;
         opacity:0.6;
-        font-family: "ibm_plex";
         font-size: 19px;
 
     }
     .order5{
     	order:5;
         opacity:0.6;
-        font-family: "ibm_plex";
         font-size: 19px;
 
     }
