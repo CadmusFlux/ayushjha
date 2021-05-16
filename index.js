@@ -70,7 +70,7 @@ $(function(){
 		$(".project1").css("display","none");
 		$(".project2").css("display","none");
 		$(".project3").css("display","none");
-		$(".project4").css("	display","none");
+		$(".project4").css("display","none");
 		$(".project5").css("display","none");
 
 		$(".parallel1").css("background-color","#372f44");
@@ -92,7 +92,8 @@ $(function(){
 
     // Kathputli/Puppet animation
 
-    var colors = ['#000000', "#00b8a9","#e84545" ,"#f6416c" ,"#ffde7d"]
+    // var colors = ['#000000', "#00b8a9","#e84545" ,"#f6416c" ,"#ffde7d"]
+    var colors = ['images/s/timer.webp', "images/s/podcast.webp","images/s/timer.webp" ,"images/s/todo.webp","images/s/todo_ui.webp"]
 
 
     $('.color').click(function(){
@@ -145,10 +146,10 @@ $(function(){
 
     		$(".artboard").removeClass("artdrop");
 
-    		//----------------------------------------------------------------------SYNTAX-------------------------------------
-    		var curr_color = $(".artboard-back").css("background-color");
-
-    		$('.artboard').css("background-color",curr_color);
+    		
+    		var curr_color = $(".artboard-back").css("background-image");
+            console.log(curr_color);
+    		$('.artboard').css("background-image",`${curr_color}`);
     		var opac = $(".artboard").css("opacity");
     		$('.artboard').css("opacity",opac);
     		
@@ -157,7 +158,7 @@ $(function(){
     		var color_name = $(this).attr("class").split(' ')[1];
     		var index  = colors[color_name.slice(5)];
 
-    		$(".artboard-back").css("background-color",index);
+    		$(".artboard-back").css("background-image",`url(${index})`);
     		
     		$(".artboard").addClass("artdrop");
 

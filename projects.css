@@ -1057,7 +1057,7 @@
         position: absolute;
         height: 200px;
         width: 300px;
-        background-color: #00b8a9;
+        background-image: url('images/s/podcast.webp');
         top: 0; left: 0; bottom: 0; right: 0;
         margin: 300px  auto auto 52px;
         z-index: 3;
@@ -1071,7 +1071,7 @@
         position: absolute;
         height: 200px;
         width: 300px;
-        background-color: #00b8a9;
+        background-image: url('images/s/podcast.webp');
         top: 0; left: 0; bottom: 0; right: 0;
         margin: 300px  auto auto 52px;
         z-index: 2;
